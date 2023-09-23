@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+    color: #000;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    overflow: auto;
+    background-color: #ececec;
+    display: flexbox;
+}
+
+header {
+    display: flexbox;  
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.head {
+    background-color: #9dff20;
+    min-height: 90px;
+    color: #fff;
+    padding: 0 50px 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+    color: #000;
+}
+
+nav {
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #005033;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #005033;
+    padding: 10px 20px 10px 20px;
+    border-radius: 25px;
+}
+
+.hero {
+    display: flex;
+    flex: 100%;
+    align-items: center; 
+    padding: 40px; 
+    background-color: #529100;
+    min-height: 600px;
+}
+
+.hero-content {
+    flex: 1; 
+    padding-right: 20px; 
+}
+
+.hero h1 {
+    font-size: 66px; 
+    color: #fff; 
+    line-height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    flex: 1; 
+    text-align: center; 
+}
+
+.hero-image img {
+    width: 80%;
+}
+
+.hero button {
+    background-color: #9dff20;
+    padding: 10px 20px 10px 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 10px #000;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 40px;
+    margin-top: 20px;
+    background: #fff;
+}
+
+#content {
+    display: flex;
+    padding: 30px;
+}
+
+.content-right {
+    display: flexbox;
+    flex: 70%;
+}
+
+aside {
+    padding-left: 20px;
+}
+
+h2 {
+    font-size: 30px;
+    letter-spacing: -1px;
+    font-weight: bold;
+    color: #529100;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    padding: 0px;
+}
+
+.gallery-item {
+    flex: 0 0 calc(25% - 20px); 
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 20px; 
+    text-align: center;
+    padding: 20px;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.gallery-item h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+
+.contact-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+.contact-form {
+    background-color: #fff;
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.contact-form button {
+    width: 100%;
+    background-color:#9dff20 ;
+    color: #000;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.contact-form button:hover {
+    background-color: #005033;
+    color: #fff;
+}
+
+#profil img {
+    width: auto;
+    max-width: 200px;
+}
+
+#profil figcaption {
+    text-align: left;
+}
+
+#profil , #sosmed{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 40px;
+    margin-top: 20px;
+    background: #fff;
+}
+
+#sosmed ul li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+#sosmed ul li a {
+    text-decoration: none;
+    display: flex;
+}
+
+#sosmed ul li img {
+    width: 25px; 
+    margin-right: 10px;
+}
+
+figure {
+    text-align: center;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #9dff20;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1000px) {
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    hero {
+        flex-direction: column; 
+        text-align: center; 
+    }
+}
